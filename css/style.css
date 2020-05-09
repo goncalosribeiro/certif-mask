@@ -33,7 +33,7 @@ nav ul li {
 }
 
 .flex-container {
-  margin: 70px 100px;
+  margin: 70px 80px;
   display: flex;
   align-items: center;
 }
@@ -41,7 +41,7 @@ nav ul li {
 .right-text {
   flex: 2;
   text-align: center;
-  padding: 25px 35px;
+  padding: 25px 25px;
 }
 
 .right-text h1 {
@@ -49,7 +49,7 @@ nav ul li {
 }
 
 .right-text p {
-  padding: 35px;
+  padding: 25px;
 }
 
 .image {
@@ -61,4 +61,30 @@ nav ul li {
   margin: auto;
   max-width: 60%;
   max-height: auto;
+}
+
+@media (max-width: 1275px) {
+  .flex-container {
+    margin: 65px 40px;
+  }
+
+  .right-text {
+    padding: 25px 10px;
+  }
+
+  .image {
+    flex: 2;
+  }
+
+  .image-top {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
